@@ -1,0 +1,138 @@
+root{
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-variant: small-caps;
+  background: linear-gradient(130deg, red, cyan, green);
+  color: #ff8800;
+}
+.newgame {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  min-height: 100vh;
+  z-index: 10;
+  background-image: linear-gradient(to top, cyan, transparent);
+  display: none;
+}
+#replay {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80px;
+  width: 200px;
+  background-color: wheat;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#replay {
+  color: red;
+  font-size: 40px;
+  margin: auto;
+}
+.game {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.game .blanks {
+  width: 10px;
+  display: flex;
+  justify-content: center;
+}
+.game .blanks input {
+  width: 40px;
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid red 8px;
+  color: green;
+  font-size: 40px;
+  font-variant: small-caps;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.hint_for_this_game {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: green;
+}
+.hang_man {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.man {
+  position: absolute;
+  height: fill;
+}
+.inp {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  background-color: cyan;
+  border-radius: 50px;
+  margin: 20px auto;
+}
+.keyboard {
+  display: block;
+  width: 500px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: transparent;
+  margin-left: 20px;
+}
+.keyboard input[type="button"] {
+  width: 30px;
+  height: 35px;
+  margin-right: 60px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 20px;
+  background-color: transparent;
+}
+.hint_page {
+  height: fill;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+}
+.khoi_name {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.khoi_name .name {
+  height: 100%;
+  width: 150px;
+  justify-content: center;
+  text-align: right;
+  font-variant: small-caps;
+  font-size: 30px;
+}
+.khoi_name .name_value {
+  height: 100%;
+  width: 50px;
+  justify-content: center;
+  text-align: right;
+  font-variant: small-caps;
+  font-size: 30px;
+}
+
+.name > *,
+.name_value > * {
+  margin-top: 35px;
+}

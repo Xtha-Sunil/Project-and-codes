@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Hang Man Game</title>
+      <link rel="stylesheet" href="hang man.css">
+      </link>
+   </head>
+   <body onload="runs_onload()">
+      <h1 class="h1_tag"></h1>
+      <div class="newgame">
+         <button onclick="reload()" id="replay">Play Again</button>
+      </div>
+      <div class="man_container">
+         <div class="hang_man"></div>
+      </div>
+      <div class="game">
+         <p class="blanks"></p>
+      </div>
+      <div>
+         <p class="hint_for_this_game"></p>
+      </div>
+      <div class="inp">
+         <div class="keyboard">
+            <p class="keys"></p>
+         </div>
+         <div class="hint_page">
+            <div class="khoi_name">
+               <div class="name">
+                  <div>Life:- </div>
+                  <div>Attempts:- </div>
+                  <div>Correct:- </div>
+                  <div>Wrong:- </div>
+                  <div>Remaining:- </div>
+               </div>
+               <div class="name_value">
+                  <div id="n1"></div>
+                  <div id="n2"></div>
+                  <div id="n3"></div>
+                  <div id="n4"></div>
+                  <div id="n5"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- inp -->
+      <script src="hang man.js"></script>
+   </body>
+</html>
